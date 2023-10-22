@@ -1,0 +1,22 @@
+:root {
+	--PRIMARY-BRAND: #4d5ae5;
+	--PRESSED-STATE: #404bbf;
+	--DARK: #2e2f42;            /* NAVY-BLUE*/
+    --SUCCESS: #31d0aa;
+	--TEXT: #434455;
+	--LATE-TEXT: #8e8f99;
+	--ACCENT: #e7e9fc;
+	--LIGHT: #f4f4fd;
+    --WHITE: #fff;
+    --MODAL-BOX: #fcfcfc;
+    --MODAL-OVERLAY: rgba(46, 47, 66, 0.70); /* #2e2f42 70% */
+    --MODAL-TXT: rgba(46, 47, 66, 0.40);  /* #2e2f42 40% */
+    /* --SHADOW-LESS: rgba(46, 47, 66, 0.08);  #2e2f4214 8% */
+    /* --SHADOW-MORE: rgba(46, 47, 66, 0.16);  #2e2f4229 16% */
+
+    --GAP-BASIC: 24px;
+    --GAP-HEADER: 40px;
+    --WIDTH-THREE: calc((100% - 2*var(--GAP-BASIC)) / 3);
+    --WIDTH-FOUR: calc((100% - 3*var(--GAP-BASIC)) / 4);
+    --WIDTH-SIX: calc((100% - 5*var(--GAP-BASIC)) / 6);
+}
