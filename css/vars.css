@@ -1,4 +1,8 @@
 :root {
+    --MOBILE-BREAKPOINT: 480px;
+    --TABLET-BREAKPOINT: 768px;
+    --DESKTOP-BREAKPOINT: 1200px;
+
 	--PRIMARY-BRAND: #4d5ae5;
 	--PRESSED-STATE: #404bbf;
 	--DARK: #2e2f42;            /* NAVY-BLUE*/
@@ -16,6 +20,7 @@
 
     --GAP-BASIC: 24px;
     --GAP-HEADER: 40px;
+    --WIDTH-TWO: calc((100% - var(--GAP-BASIC)) / 2);
     --WIDTH-THREE: calc((100% - 2*var(--GAP-BASIC)) / 3);
     --WIDTH-FOUR: calc((100% - 3*var(--GAP-BASIC)) / 4);
     --WIDTH-SIX: calc((100% - 5*var(--GAP-BASIC)) / 6);
