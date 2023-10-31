@@ -216,11 +216,19 @@ img {
     padding: 112px 0;
     background-color: var(--DARK);
     background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
-        url('../images/bg-motto.jpg');
+        url('../images/bg-motto-428x432.jpg');
     background-repeat: no-repeat;
     background-position: center, center;
     background-size: cover;
     text-align: center;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section.motto {
+        background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
+        url('../images/bg-motto-428x432@2x.jpg');
+    }
 }
 .motto-title {
     margin-left: auto;
@@ -248,37 +256,43 @@ img {
 .btn.order:focus {
     background-color: var(--PRESSED-STATE);
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .section.motto {
-    background-image: url('../images/bg-motto@2x.jpg');
-  }
-}
-@media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
-  .section.motto {
-    background-image: url('../images/bg-motto@3x.jpg');
-  }
-}
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+    .section.motto {
+        background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
+        url('../images/bg-motto-768x436.jpg');
+    }
     .motto-title {
         font-size: 56px;
         line-height: 1.07;
-    }
-}
-@media screen and (min-width:767px) and (max-width: 1199px) {
-    .motto-title {
         margin-bottom: 36px;
     }
 }
+@media screen and (min-width: 767px) and ((min-device-pixel-ratio: 2) or
+(min-resolution: 192dpi) or
+(min-resolution: 2dppx)) {
+    .section.motto {
+        background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
+        url('../images/bg-motto-768x436@2x.jpg');
+    }
+}
 @media screen and (min-width: 1200px) {
+    .section.motto {
+        background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
+        url('../images/bg-motto-768x436.jpg');
+    }
     .section.motto {
         padding: 188px 0;
     }
     .motto-title {
         margin-bottom: 48px;
+    }
+}
+@media screen and (min-width: 1200px) and ((min-device-pixel-ratio: 2) or
+(min-resolution: 192dpi) or
+(min-resolution: 2dppx)) {
+    .section.motto {
+        background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
+        url('../images/bg-motto-768x436@2x.jpg');
     }
 }
 /* ---------------------------- OUR ADVANTAGES */
@@ -999,8 +1013,7 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 80px;
-    padding-left: 40px;
+    padding-top: 80px 60px 40px 40px;
     background-color: var(--WHITE);
     z-index: 999;
     transform: translateX(100%);
@@ -1044,6 +1057,7 @@ img {
 .mobile-menu {
     padding: 0;
     margin: 0;
+    margin-bottom: 72px;
     list-style: none;
 }
 .mobile-menu .link {
