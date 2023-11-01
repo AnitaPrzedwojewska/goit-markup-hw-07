@@ -1089,9 +1089,9 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
-        row-gap: 72px;
-        justify-content: center;
+        justify-content: start;
         align-items: baseline;
+        padding-left: 108px;
     }
     .footer-info {
         margin-right: 0;
@@ -1107,7 +1107,31 @@ img {
         align-items: center;
         gap: 24px;
     }  
+    .footer-newsletter {
+        justify-content: start;
+    }
     .newsletter-input {
         width: 264px;  
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container-footer {
+        column-gap: 0;
+        padding-left: 15px;
+    }
+    .footer-info {
+        margin-right: 120px;
+    }
+    .footer-sm {
+        margin-right: 80px;
+    }
+    .newsletter-label {
+        width: 264px;
+    }
+    .newsletter-input {
+        width: 264px;  
+    }
+    .btn.newsletter {
+        min-width: 77px;
     }
 }
