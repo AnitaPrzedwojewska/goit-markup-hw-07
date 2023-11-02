@@ -16,6 +16,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 .clear-style {
     -moz-appearance: none;
@@ -398,9 +399,7 @@ img {
         margin-bottom: 36px;
     }
 }
-@media screen and (min-width: 767px) and ((min-device-pixel-ratio: 2) or
-(min-resolution: 192dpi) or
-(min-resolution: 2dppx)) {
+@media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
     .section.motto {
         background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
         url('../images/bg-motto-768x436@2x.jpg');
@@ -1125,11 +1124,14 @@ img {
     .footer-sm {
         margin-right: 80px;
     }
+    .footer-newsletter {
+        display: block;
+    }
+    .footer-form-newsletter {
+        display: flex;
+    }
     .newsletter-label {
         width: 264px;
-    }
-    .newsletter-input {
-        width: 264px;  
     }
     .btn.newsletter {
         min-width: 77px;
